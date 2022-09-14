@@ -14,14 +14,12 @@ const Calculator = () => {
 
   useEffect(() => {
     const { total, next } = data;
-
     if (!next && !total) setDisplay('0');
     else setDisplay(next ?? total);
   }, [data]);
 
   const handleClick = (e) => {
     const buttonName = e.target.textContent;
-
     setData((prevState) => ({ ...calculate(prevState, buttonName) }));
   };
 
