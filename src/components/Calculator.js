@@ -4,7 +4,7 @@ import './style.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [data, setData] = useState({
+  const [result, setResult] = useState({
     total: null,
     next: null,
     operation: null,
@@ -13,14 +13,14 @@ const Calculator = () => {
   const [display, setDisplay] = useState('0');
 
   useEffect(() => {
-    const { total, next } = data;
+    const { total, next } = result;
     if (!next && !total) setDisplay('0');
     else setDisplay(next ?? total);
-  }, [data]);
+  }, [result]);
 
   const handleClick = (e) => {
     const buttonName = e.target.textContent;
-    setData((prevState) => ({ ...calculate(prevState, buttonName) }));
+    setResult((prevState) => ({ ...calculate(prevState, buttonName) }));
   };
 
   return (
