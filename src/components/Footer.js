@@ -1,13 +1,11 @@
 import React from 'react';
 import style from '../scss/Style.module.scss';
-import github from '../assets/github.svg';
 
 function Footer() {
   return (
     <section className={style.footer}>
-      Copyright ©️
-      <a href="https://github.com/mavericks-db">mavericks-db</a>
-      <img src={github} alt="" />
+      Copyright ©️ 2022
+      <a href="https://github.com/DJ-MrJay">Mr. Jay</a>
     </section>
   );
 }
