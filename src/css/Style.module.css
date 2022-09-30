@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital@0;1&family=Rubik&display=swap');
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  font-family: 'Inter', sans-serif;
+  color: aliceblue;
+  padding: 1rem 4%;
+}
+
+.h1 {
+  font-size: 1.25rem;
+}
+
+.pageLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.navLink {
+  color: white;
+}
+
+.navLink:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.navLink:focus {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Home page */
+.page {
+  padding: 1rem 4%;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.p {
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Calculator page */
+.calcTitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 1rem 4%;
+}
+
+/* Quote page */
+.block {
+  padding: 1rem 4%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.author {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  color: gray;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 2rem 4%;
+  position: fixed;
+}
+
+.footer a {
+  color: orange;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  /* Header */
+  .h1 {
+    font-size: 3rem;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+
+  .pageLinks {
+    gap: 1rem;
+  }
+
+  /* Home */
+  .title {
+    font-size: 2rem;
+  }
+
+  .p {
+    font-size: 1.25rem;
+  }
+
+  /* Calculator */
+  .calcTitle {
+    font-size: 2rem;
+    float: left;
+  }
+
+  /* Quote */
+  .quote {
+    font-size: 2rem;
+  }
+
+  .author {
+    font-size: 2rem;
+  }
+}

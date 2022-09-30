@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import '../scss/Calculator.scss';
-import style from '../scss/Style.module.scss';
+import '../css/Calculator.css';
+import style from '../css/Style.module.css';
 import calculate from '../logic/calculate';
 
 const buttons = [

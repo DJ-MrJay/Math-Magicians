@@ -1,23 +1,11 @@
-@import url(./App.scss);
-
-$clr-darkgray: #858694;
-$clr-lightgray: #e0e0e0;
-$clr-orange: #f2913e;
-$clr-white: #fff;
-$clr-black: #181818;
+@import url(./App.css);
 
 .Calculator {
-  margin: 2rem auto 0 auto;
-  width: 80vw;
-  height: auto;
-  background-color: $clr-darkgray;
-  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
-  border: 2px solid $clr-darkgray;
+  padding: 1rem 4%;
 }
 
 .Keypad {
   display: grid;
-  width: 100%;
   grid-template-areas:
     "Display Display Display Display"
     "AC Inverter Modulo Divide"
@@ -33,14 +21,13 @@ $clr-black: #181818;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background-color: $clr-darkgray;
+  background-color: gray;
   grid-area: Display;
-  border-style: ridge;
-  box-shadow: 1px 1px 0.05px 0 $clr-darkgray;
-  padding: 0.5rem;
-  color: $clr-white;
+  padding: 1rem;
+  color: white;
   font-size: 2rem;
   height: 3rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 .Button {
@@ -48,27 +35,27 @@ $clr-black: #181818;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid $clr-darkgray;
+  border: 1px solid gray;
   cursor: pointer;
   font-size: 1.25rem;
+}
 
-  &:active {
-    background-color: #ecf0f1;
-    filter: drop-shadow(1px);
-  }
+.Button:active {
+  background-color: #ecf0f1;
+  filter: drop-shadow(1px);
+}
 
-  &:hover {
-    background-color: #ecf0f1;
-    filter: drop-shadow(1px);
-  }
+.Button:hover {
+  background-color: white;
+  filter: drop-shadow(1px);
 }
 
 .Gray {
-  background-color: $clr-lightgray;
+  background-color: lightgray;
 }
 
 .Orange {
-  background-color: $clr-orange;
+  background-color: orange;
 }
 
 .AC {
@@ -147,11 +134,11 @@ $clr-black: #181818;
   grid-area: Equal;
 }
 
-//Desktop Version
+/* Desktop version */
 @media screen and (min-width: 768px) {
   .Calculator {
-    width: 40vw;
-    margin: 4rem 4rem 0 auto;
+    width: 50vw;
     float: right;
+    padding-top: 2rem;
   }
 }
