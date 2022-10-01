@@ -39,8 +39,10 @@ Feel free to check the [issues page](https://github.com/DJ-MrJay/math-magicians/
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- Hat tip to anyone whose code was used
+Hat tip to anyone whose code was used
 
+## Live Site
+This project is live on [Netlify](https://storied-pasca-ba2fa8.netlify.app/).
 
 ## License
 This project is [MIT](./MIT.md) licensed.
