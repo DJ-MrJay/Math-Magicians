@@ -1,4 +1,5 @@
 import operate from './operate';
+
 describe('To test the functionality of addition', () => {
   test('should Add 7 and 21 to Equal 28', () => {
     const sum = operate('7', '21', '+');
