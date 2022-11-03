@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="footer"
+>
+  Copyright ©️2022. 
+  <a
+    href="https://github.com/DJ-MrJay"
+  >
+    Mr. Jay
+  </a>
+</section>
+`;
