@@ -14,6 +14,7 @@ describe('To test the functionality of addition', () => {
     expect(sum).toBe('-80');
   });
 });
+
 describe('To test the functionality of subtraction', () => {
   test('should Subtract 10 and 1 to Equal 9', () => {
     const difference = operate('10', '1', '-');
@@ -28,6 +29,7 @@ describe('To test the functionality of subtraction', () => {
     expect(difference).toBe('37');
   });
 });
+
 describe('To test the functionality of multiplication', () => {
   test('should Multiply 3 and 4 to Equal 12', () => {
     const product = operate('3', '4', 'x');
@@ -42,6 +44,7 @@ describe('To test the functionality of multiplication', () => {
     expect(product).toBe('-30');
   });
 });
+
 describe('To test the functionality of division', () => {
   test('should Divide 36 and 6 to Equal 6', () => {
     const quotient = operate('36', '6', '÷');
@@ -56,6 +59,7 @@ describe('To test the functionality of division', () => {
     expect(quotient).toBe("Can't divide by 0.");
   });
 });
+
 describe('To test the functionality of the Modulo Division', () => {
   test('should Mod 1000 and 100 to Equal 0 ', () => {
     const remainder = operate('1000', '100', '%');
@@ -70,6 +74,7 @@ describe('To test the functionality of the Modulo Division', () => {
     expect(remainder).toBe("Can't find modulo as can't divide by 0.");
   });
 });
+
 describe('To test if Unknown Operation', () => {
   test('should Throw Error if Unknown Operation', () => {
     expect(() => {
